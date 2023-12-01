@@ -1,6 +1,6 @@
 fun main() {
     val fixNumbers = listOf("oneight" to "oneeight", "threeight" to "threeeight", "fiveight" to "fiveeight", "nineight" to "nineeight", "twone" to "twoone", "sevenine" to "sevennine", "eightwo" to "eighttwo")
-    val pairings = listOf("eightwo" to "8", "eighthree" to "8", "twone" to "2", "one" to "1", "two" to "2", "three" to "3", "four" to "4", "five" to "5", "six" to "6", "seven" to "7","eight" to "8", "nine" to "9")
+    val pairings = listOf( "one" to "1", "two" to "2", "three" to "3", "four" to "4", "five" to "5", "six" to "6", "seven" to "7","eight" to "8", "nine" to "9")
     fun String.getFirstAndLast() = "${first()}${last()}"
     fun String.smartReplace(replacements: List<Pair<String, String>>) : String {
         var result = this
