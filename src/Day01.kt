@@ -1,6 +1,5 @@
 fun main() {
-    val fixNumbers = listOf("oneight" to "oneeight", "threeight" to "threeeight", "fiveight" to "fiveeight", "nineight" to "nineeight", "twone" to "twoone", "sevenine" to "sevennine", "eightwo" to "eighttwo")
-    val pairings = listOf( "one" to "1", "two" to "2", "three" to "3", "four" to "4", "five" to "5", "six" to "6", "seven" to "7","eight" to "8", "nine" to "9")
+    val pairings = listOf( "one" to "on1e", "two" to "tw2o", "three" to "thr3ee", "four" to "fo4ur", "five" to "fi5ve", "six" to "si6x", "seven" to "sev7en","eight" to "eig8ht", "nine" to "ni9ne")
     fun String.getFirstAndLast() = "${first()}${last()}"
     fun String.smartReplace(replacements: List<Pair<String, String>>) : String {
         var result = this
@@ -21,7 +20,6 @@ fun main() {
     fun part2(input: List<String>): Int {
         return input.sumOf { calibration ->
             calibration
-                .smartReplace(fixNumbers)
                 .smartReplace(pairings)
                 .filter { it.isDigit() }
                 .getFirstAndLast()
